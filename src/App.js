@@ -11,6 +11,11 @@ import './App.css'
 
 export const App = () => {
   const [dogURL, setDogUrl] = useState("https://images.dog.ceo/breeds/cairn/n02096177_1596.jpg");
+
+  const dogurl_change = () => {
+    setDogUrl = "https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg";
+  }
+
   return (
     <main role="main">
       <header>Test Flight!</header>
@@ -20,6 +25,9 @@ export const App = () => {
         </div>
       </div>
       <img src={dogURL} alt="dog"></img>
+      <div class="button1">
+        <button onClick={() => setDogUrl("https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg")}>Press to Change Dog</button>
+      </div>
     </main>
   )
 }
