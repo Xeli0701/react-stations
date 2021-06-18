@@ -9,6 +9,14 @@ import './App.css'
  */
 export const App = () => {
   return (
-    <header>Test Flight!</header>
+    <main role="main">
+      <header>Test Flight!</header>
+      <div>
+        <div>
+          This is Dog image.
+        </div>
+      </div>
+      <img src="https://images.dog.ceo/breeds/cairn/n02096177_1596.jpg" alt="dog"></img>
+    </main>
   )
 }
